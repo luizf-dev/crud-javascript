@@ -1,0 +1,103 @@
+
+/*===============TABELA INICIO =========================================*/
+.table-container{
+    padding: 0 10%;
+    margin: 40px auto 0;
+}
+
+.head{
+    font-size: 40px;
+    text-align: center;
+    color: #f1f1f1;
+    margin-bottom: 40px;
+}
+
+.table{
+    width: 100%;
+    border-collapse:separate;
+    box-shadow: 5px 3px 3px #000;
+}
+
+.table thead{
+    background-color: #357266;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.35px;
+    color: #ffffff;
+    opacity: 1;
+    padding: 12px;
+    vertical-align: top;
+    border: 1px solid #dee2e685;
+    text-shadow: 1px 1px #000;
+	text-align: center;
+}
+
+.table tbody tr td{
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: normal;
+    color: #000;
+    background-color: #fff;
+    padding: 12px;
+	line-height: 25px;
+    text-align: center;
+    border: 1px solid #dee2e685;
+}
+
+.table a .edit {
+    font-size: 25px;
+    color: #357266;
+    text-shadow: 0.5px 1px #000;
+    font-weight: 900;
+}
+
+.table a .delete{
+    font-size: 25px;
+    color: rgb(141, 32, 32);
+    text-shadow: 0.5px 1px #000;
+    font-weight: 900;
+}
+/*============TABELA FIM==========================*/
+
+
+
+
+/*==========MEDIA QUERIES======================*/
+@media (max-width: 768px) {
+
+	/*===TABELA RESPONSIVA INICIO===*/
+    .table thead{
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td{
+        display: block;
+        width: 100%
+    }
+
+    .table tr{
+        margin-bottom: 15px;
+    }
+    
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 40%;
+        position: relative;
+    }
+
+    .table td:before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 900;
+        font-size: 14px;
+        text-align: left;
+        color: #357266;
+        text-shadow: 0.5px 1px #000;
+    }
+	/*====TABELA RESPONSIVA FIM=====*/	
