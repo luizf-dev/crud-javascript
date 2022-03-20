@@ -5,11 +5,12 @@
     margin-bottom: 5px;
     background-color: black;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.2rem;
     cursor: pointer;
     transition: box-shadow .6s ease;
     box-shadow: 5px 3px 3px #000;
     font-weight: 900;
+    text-shadow: 2px 1px 1px #000;
 }
 
 .button.blue{

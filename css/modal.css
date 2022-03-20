@@ -8,6 +8,7 @@
     opacity: 0;
     z-index: -1;
     box-shadow: 5px 3px 3px #000;
+    transition: all 1s ease;
 }
 
 .modal.active{
@@ -35,6 +36,10 @@
     font-size: 1rem;
     background: #357266;
     color: #fff;
+}
+
+.modal-title{
+    text-shadow: 2px 1px 1px #000;
 }
 
 .modal-close{
@@ -69,11 +74,14 @@
     box-shadow: 0 0 2px black;
     padding: 0 10px;
     font-size:1rem;
+    font-weight: 900;
 }
 
 .modal-field:focus{
-    border: 2px solid gray;
-    box-shadow: 0 0 3px grey;
+    border: 1px solid #357266;
+    box-shadow: 0 0 3px #357266;
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 

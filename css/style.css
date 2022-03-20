@@ -18,10 +18,10 @@ body{
     padding: 15px;
 }
 
-
 .header-title{
     color: #fff;
     font-size: 2rem;
+    text-shadow: 3px 2px 2px #000;
 }
 
 @media (max-width: 480px){

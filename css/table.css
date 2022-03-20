@@ -1,20 +1,21 @@
 
 /*===============TABELA INICIO =========================================*/
 .table-container{
-    padding: 0 10%;
+    padding: 0 5%;
     margin: 40px auto 0;
 }
 
-.head{
+/*.head{
     font-size: 40px;
     text-align: center;
     color: #f1f1f1;
     margin-bottom: 40px;
-}
+    border: 1px solid purple;
+}*/
 
 .table{
     width: 100%;
-    border-collapse:separate;
+    border-collapse:collapse;
     box-shadow: 5px 3px 3px #000;
 }
 
@@ -23,20 +24,20 @@
 }
 
 .table thead tr th{
-    font-size: 14px;
-    font-weight: 600;
+    font-size: 1.5em;
+    font-weight: 900;
     letter-spacing: 0.35px;
     color: #ffffff;
     opacity: 1;
     padding: 12px;
     vertical-align: top;
-    border: 1px solid #dee2e685;
-    text-shadow: 1px 1px #000;
+    text-shadow: 2px 2px 2px #000;
 	text-align: center;
+    border: 1px solid #000;
 }
 
 .table tbody tr td{
-    font-size: 14px;
+    font-size: 1em;
     letter-spacing: 0.35px;
     font-weight: normal;
     color: #000;
@@ -44,7 +45,7 @@
     padding: 12px;
 	line-height: 25px;
     text-align: center;
-    border: 1px solid #dee2e685;
+    border: 1px solid #000;
 }
 
 .table a .edit {
@@ -93,11 +94,12 @@
         position: absolute;
         left: 0;
         width: 50%;
-        padding-left: 15px;
+        padding-left: 5px;
         font-weight: 900;
-        font-size: 14px;
+        font-size: 1.1em;
         text-align: left;
         color: #357266;
-        text-shadow: 0.5px 1px #000;
+        text-shadow: 1px 1px 1px #000;
     }
 	/*====TABELA RESPONSIVA FIM=====*/	
+}
