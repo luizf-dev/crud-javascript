@@ -25,6 +25,25 @@ button.red{
     background-color: #FF4949;
 }
 
+.action{
+    background-color: transparent;
+    border: none;
+}
+
+.action{
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+button .edit{
+    color: #357266;
+}
+
+button .delete{
+    color: #FF4949;
+}
+
 .button:hover{
     box-shadow: inset 200px 0 0 #00000055;
 }
