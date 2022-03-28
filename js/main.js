@@ -67,15 +67,15 @@ const saveClient = () => {
 
 //Carregando os registros do LocalStorage
 
-const createRow = (client) => {
+const createRow = (client, index) => {
     const newRow = document.createElement('tr') 
     newRow.innerHTML = `
-        <td data-label="Nome">${client.nome}</td>
-        <td data-label="Email">${client.email}</td>
-        <td data-label="Telefone">${client.telefone}</td>
-        <td data-label="Cidade">${client.cidade}</td>
-        <td data-label="Editar"><button type="button" class="action" data-action="edit"><i class="fas fa-edit fa-2x edit"></i></button></td>
-        <td data-label="Deletar"><button type="button" class="action" data-action="delete"><i class="fas fa-trash fa-2x delete"></i></button></td>
+        <td data-label="Nome:">${client.nome}</td>
+        <td data-label="Email:">${client.email}</td>
+        <td data-label="Telefone:">${client.telefone}</td>
+        <td data-label="Cidade:">${client.cidade}</td>
+        <td data-label="Editar:"><button type="button" class="action-edit" data-action="edit-${index}">Editar</button></td>
+        <td data-label="Deletar:"><button type="button" class="action-delete" data-action="delete-${index}">Deletar</button></td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow);
 }
@@ -93,7 +93,7 @@ const updateTable = () => {
 
 const editDelete = (event) => {
     if(event.target.type == 'button'){
-        console.log(event.target.dataset.action);
+        console.log(event.target.dataset.action.split('-'));
     }
 }
 
