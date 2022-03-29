@@ -34,25 +34,13 @@
     font-weight: normal;
     color: #000;
     background-color: #fff;
-    padding: 12px;
+    padding: 10px;
 	line-height: 25px;
     text-align: center;
     border: 1px solid #000;
 }
 
-.table a .edit {
-    font-size: 25px;
-    color: #357266;
-    text-shadow: 0.5px 1px #000;
-    font-weight: 900;
-}
 
-.table a .delete{
-    font-size: 25px;
-    color: rgb(141, 32, 32);
-    text-shadow: 0.5px 1px #000;
-    font-weight: 900;
-}
 /*============TABELA FIM==========================*/
 
 
