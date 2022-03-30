@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/clipboard-list-solid.svg" type="image/x-icon">
-    <link rel="stylesheet" href="fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/table.css">
-    <title>CRUD</title>
-</head>
-<body>
-    <header id="header">
-        <h1 class="header-title">Cadastro de Clientes</h1>
-    </header>
-        <div class="table-container">
-            <button type="button" class="button green mobile" id="cadastrarCliente"><i class="fas fa-plus fa-1x"></i> Cadastrar Cliente</button>
-            <table class="table" id="tableClient">
-                <thead>
-                    <tr>
-                        <th>Id</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Telefone</th>
-                        <th>Cidade</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="img/clipboard-list-solid.svg" type="image/x-icon">
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/table.css">
+        <title>CRUD</title>
+    </head>
+    <body>
+        <header id="header">
+            <h1 class="header-title">Cadastro de Clientes</h1>
+        </header>  
+            <div class="table-container">
+                    <div class="search"> 
+                        <input class="input-field" id="myInput" type="text" placeholder="Pesquisar">
+                        <button type="button" class="button green mobile" id="cadastrarCliente"><i class="fas fa-plus fa-1x"></i> Cadastrar Cliente</button>
+                    </div> 
+                <table class="table" id="tableClient">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Telefone</th>
+                            <th>Cidade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="myTable">
 
-                </tbody>
-            </table>
-        </div>
-        <div class="modal" id="modal">
-            <div class="modal-content">
-                <header class="modal-header">
-                    <h2 class="modal-title">Novo Cliente</h2>
-                    <span class="modal-close" id="modalClose">&#10006;</span>
-                </header>
-                <form id="form" class="modal-form">
-                    <input id="nome"     type="text"    class="modal-field" placeholder="Nome do Cliente" data-index="new" required autofocus> 
-                    <input id="email"    type="email"   class="modal-field" placeholder="E-mail do Cliente" required>
-                    <input id="telefone" type="number"  class="modal-field" placeholder="Celular do Cliente" required>
-                    <input id="cidade"   type="text"    class="modal-field" placeholder="Cidade do Cliente" required>
-                </form>
-                <footer class="modal-footer">
-                    <button id="salvar" class="button green">Salvar</button>
-                    <button id="cancelar" class="button red">Cancelar</button>
-                </footer>
+                    </tbody>
+                </table>
             </div>
-        </div>
-    <script src="js/main.js" defer></script>
+            <div class="modal" id="modal">
+                <div class="modal-content">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Novo Cliente</h2>
+                        <span class="modal-close" id="modalClose">&#10006;</span>
+                    </header>
+                    <form id="form" class="modal-form">
+                        <input id="nome"     type="text"    class="modal-field" placeholder="Nome do Cliente" data-index="new" required autofocus> 
+                        <input id="email"    type="email"   class="modal-field" placeholder="E-mail do Cliente" required>
+                        <input id="telefone" type="number"  class="modal-field" placeholder="Celular do Cliente" required>
+                        <input id="cidade"   type="text"    class="modal-field" placeholder="Cidade do Cliente" required>
+                    </form>
+                    <footer class="modal-footer">
+                        <button id="salvar" class="button green">Salvar</button>
+                        <button id="cancelar" class="button red">Cancelar</button>
+                    </footer>
+                </div>
+            </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/main.js" defer></script>    
 </body>
 </html>

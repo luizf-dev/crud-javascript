@@ -161,3 +161,15 @@ document.getElementById('salvar')
 document.querySelector('#tableClient>tbody')
     .addEventListener('click', editDelete)
 //===========================================
+
+
+//FILTRO DE BUSCA ============
+$(document).ready(function(){
+    $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+    });
+//================================

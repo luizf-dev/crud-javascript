@@ -26,7 +26,12 @@ button.red{
 }
 
 .button:hover{
-    box-shadow: inset 200px 0 0 #00000055;
+    box-shadow: inset 300px 0 0 #00000055;
+}
+
+#cadastrarCliente{
+    width: 48%;
+    margin: 4px;
 }
 
 #edit, #del{
@@ -38,7 +43,7 @@ button.red{
 
 
 
-@media(max-width:480px){
+@media(max-width:913px){
 
     .button.mobile{
         width: 100%;
@@ -53,6 +58,11 @@ button.red{
         height: 40px;
         font-size: 1.2em;
         margin: 2px;
+    }
+
+    #cadastrarCliente{
+        width: 100%;
+        margin: 0;
     }
 }
 

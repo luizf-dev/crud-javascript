@@ -24,10 +24,41 @@ body{
     text-shadow: 3px 2px 2px #000;
 }
 
-@media (max-width: 480px){
+.search{
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.input-field{
+    height: 40px;
+    width: 48%;
+    margin: 4px;
+    float: left;
+    outline-style: none;
+    border-style: none;
+    font-size: 1.4em;
+    color: #000;
+    font-weight: 900;
+}
+
+.input-field:focus{
+    border: 1px solid #000;
+    box-shadow: 0 0 3px #357266;
+    font-size: 1.2em;
+    font-weight: 900;
+}
+
+
+@media (max-width: 913px){
 
     .header-title{
         font-size: 1.3em;
+    }
+
+    .search, .input-field{
+        width: 100%;
+        margin: 0;
+        margin-bottom: 10px;
     }
 }
 
